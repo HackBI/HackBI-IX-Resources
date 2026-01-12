@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <title>JavaScript Beginner Lesson</title>
+
+  <style>
+
+    body {
+      background-color: lightskyblue;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    input, button {
+      margin: 5px;
+      padding: 8px;
+    }
+
+    #output {
+      margin-top: 15px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <h1>JavaScript Workshop</h1>
+
+  <!-- Printing Section -->
+  <button onclick="printHello()">Print Hello World</button>
+
+  <!-- User Input Section -->
+  <p>Enter the side length of a square:</p>
+  <input id="sideInput" type="number" placeholder="Side length">
+  <br>
+  <button onclick="calculateArea()">Calculate Area</button>
+
+  <!-- Output -->
+  <div id="output"></div>
+
+  <script>
+    // Printing
+    function printHello() {
+      let output = document.getElementById("output");
+      output.innerText = "Hello World!";
+    }
+
+    // Final Challenge: Area of a Square
+    function calculateArea() {
+      let side = Number(document.getElementById("sideInput").value);
+      let area = side * side;
+
+      let output = document.getElementById("output");
+      output.innerText = "The area of the square is: " + area;
+    }
+  </script>
+
+</body>
+</html>
