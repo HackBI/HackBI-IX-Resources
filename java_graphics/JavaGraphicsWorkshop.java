@@ -135,3 +135,4 @@ public class JavaGraphicsWorkshop extends JPanel implements ActionListener, KeyL
       new JavaGraphicsWorkshop(500, 400);
    }
 }
+
